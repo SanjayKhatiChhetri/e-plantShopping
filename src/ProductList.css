@@ -246,7 +246,7 @@ div > h1 {
   .product-card {
     flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
     max-width: calc(
-      50% - 20px
+      100% - 20px
     ); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
   }
   .nav-secn-itm {

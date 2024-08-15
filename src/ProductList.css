@@ -260,6 +260,10 @@ div > h1 {
     align-items: center; /* Align items to the center of the container */
   }
 
+  div > h1 {
+    margin-left: 5vw;
+  }
+
   .tag {
     margin-bottom: 20px; /* Add margin bottom for spacing */
     text-align: center; /* Align text to the center */

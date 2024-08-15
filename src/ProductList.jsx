@@ -271,7 +271,7 @@ function ProductList() {
   };
   const styleObjUl = {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     alignItems: "center",
     width: "1100px",
   };
@@ -324,7 +324,7 @@ function ProductList() {
             </a>
           </div>
         </div>
-        <div style={styleObjUl}>
+        <div className="nav-secn-itm" style={styleObjUl}>
           <div>
             {" "}
             <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>
@@ -360,7 +360,7 @@ function ProductList() {
                   style={{
                     position: "relative",
                     fontSize: "20px",
-                    top: "20px",
+                    top: "22px",
                     right: "40px",
                   }}
                 >
@@ -375,7 +375,9 @@ function ProductList() {
         <div className="product-grid">
           {plantsArray.map((category, categoryIndex) => (
             <div key={categoryIndex}>
-              <h2>{category.category}</h2>
+              <h1>
+                <div>{category.category}</div>
+              </h1>
               <div className="product-list">
                 {category.plants.map((plant, plantIndex) => (
                   <div key={plantIndex} className="product-card">
@@ -384,7 +386,7 @@ function ProductList() {
                       alt={plant.name}
                       className="product-image"
                     />
-                    <h3 className="product-title">{plant.name}</h3>
+                    <div className="product-title">{plant.name}</div>
                     <p className="product-description">{plant.description}</p>
                     <p className="product-price">{plant.cost}</p>
                     <button
